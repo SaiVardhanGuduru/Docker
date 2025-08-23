@@ -1,5 +1,5 @@
 FROM mysql:8.0
-ENV MYSQL_ROOT_PASSWORD=expense@1
+ENV MYSQL_ROOT_PASSWORD=ExpenseApp@1
 COPY schema/*.sql /docker-entrypoint-initdb.d
 #docker command to build the image 
 #docker build -t db:1.0.0 . 
@@ -9,7 +9,7 @@ COPY schema/*.sql /docker-entrypoint-initdb.d
 #docker command to get into container
 #docker exec -it db bash
 #database commandd
-#mysql -u root -pexpense@1
+#mysql -u root -pExpenseApp@1
 #show databases;
 #use transactions;
 #show tables;
