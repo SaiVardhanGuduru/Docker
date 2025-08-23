@@ -5,6 +5,7 @@ COPY schema/*.sql /docker-entrypoint-initdb.d
 #docker build -t db:1.0.0 . 
 #docker command to create the container out of the image
 #docker run -d --name db  db:1.0.0 
+#docker run -d --name db --network expense db:1.0.0
 #docker command to get into container
 #docker exec -it db bash
 #database commandd
